@@ -1,5 +1,7 @@
 
-
+html{
+    height:98%;
+}
 
 body {
     background-image: url("Phon.jpg");
@@ -14,28 +16,31 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    height:100%;
    
 }
 .leftdiv{
-    height:900px;
+    height:100%;
     width: 25%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items:center ;
-    border:1px solid wheat; /*delete after work*/
 
 }
 
 .game{
-    height: 900px;
+    height: 100%;
     width:50%;
-    border:1px dashed wheat;
 }
 
 .rightdiv {
-    height: 900px;
+    height: 100%;
     width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .name{
@@ -51,6 +56,7 @@ body {
     font-size:55px;
     margin:15px 0 8px 0;
     cursor:default;
+    
 }
 
 .nameg{
@@ -76,8 +82,8 @@ p{
 }
 
 .start{
-    height: 110px;
-    width: 280px;
+    height: 20%;
+    width: 80%;
     margin:0 0 15px 0;
     font-family: Krona One;
     color:whitesmoke;
@@ -85,7 +91,7 @@ p{
     border:4px solid whitesmoke;
     backdrop-filter: blur(10px);
     border-radius: 25px;
-    font-size:20px;
+    font-size:25px;
     transition: 0.3s;
     cursor:pointer
 }
@@ -105,4 +111,49 @@ p{
 
 .playword:hover{
     transform: scale(1.2);
+}
+
+.barea{
+    width:98vh;
+    height:95vh;
+    background-color: rgba(245, 245, 245, 0.25);
+    border:4px solid whitesmoke;
+    backdrop-filter: blur(10px);
+    border-radius: 25px;
+    cursor:pointer;
+    transition: 0.4s;
+}
+
+.barea:hover{
+    transform: scale(1.01);
+}
+.time{
+    font-family: Krona One;
+    color:whitesmoke;
+    font-size:25px;
+    margin:0 0 0 0;
+    cursor:default;
+}
+.score{
+    font-family: Krona One;
+    color:whitesmoke;
+    font-size:25px;
+    margin:0 0 0 0;
+    cursor:default;
+}
+
+.apples{
+    font-family: Krona One;
+    color:whitesmoke;
+    font-size:25px;
+    margin:0 0 0 0;
+    cursor:default;
+}
+
+.enemies{
+    font-family: Krona One;
+    color:whitesmoke;
+    font-size:25px;
+    margin:0 0 0 0;
+    cursor:default;
 }
