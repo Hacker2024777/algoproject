@@ -159,7 +159,8 @@ p{
 }
 
 .infoerror{
-    display: flex;
+    display: none;
+    margin-top: 20vh;
 }
 
 h1{
@@ -172,9 +173,21 @@ color: whitesmoke;}
 /*media q*/
 
 @media (max-width:1000px){
-    body{
+    .leftdiv{
         display: none;
     }
-    
+    .rightdiv{
+        display: none;
+    }
+    .barea{
+        display: none;
+    }
+    .infoerror{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
      
 }
+
