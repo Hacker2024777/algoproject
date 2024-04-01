@@ -48,6 +48,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    animation: name1 1s ease-in-out 1;
 }
 
 .names{
@@ -56,6 +57,7 @@ body {
     font-size:55px;
     margin:15px 0 8px 0;
     cursor:default;
+    user-select: none;
     
 }
 
@@ -65,6 +67,7 @@ body {
     font-size:55px;
     margin:0 0 0 0;
     cursor:default;
+    user-select: none;
 }
 
 p{
@@ -73,12 +76,15 @@ p{
     font-size: 30px;
     margin:0 0 8px 0 ;
     cursor:default;
+    user-select: none;
 }
 .psp{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    user-select: none;
+    animation: psp1 1s ease-out 1;
 }
 
 .start{
@@ -93,7 +99,9 @@ p{
     border-radius: 25px;
     font-size:25px;
     transition: 0.3s;
-    cursor:pointer
+    cursor:pointer;
+    user-select: none;
+    animation: start1 1.5s ease-in-out 1;
 }
 
 .start:hover{
@@ -107,6 +115,7 @@ p{
     transition: 0.2s;
     cursor:url("cursor.png"),pointer;
     transition: 0.4s;
+    user-select: none;
 }
 
 .playword:hover{
@@ -114,14 +123,17 @@ p{
 }
 
 .barea{
-    width:98vh;
-    height:95vh;
+    width:48vw;
+    height:94vh;
     background-color: rgba(245, 245, 245, 0.25);
     border:4px solid whitesmoke;
     backdrop-filter: blur(10px);
     border-radius: 25px;
     cursor:pointer;
     transition: 0.4s;
+    user-select: none;
+    margin-top: 1vh;
+    animation: barea1 1s ease-out 1;
 }
 
 .barea:hover{
@@ -133,6 +145,8 @@ p{
     font-size:25px;
     margin:0 0 0 0;
     cursor:default;
+    user-select: none;
+    animation: info1 1s ease-out 1;
 }
 .score{
     font-family: Krona One;
@@ -140,6 +154,10 @@ p{
     font-size:25px;
     margin:0 0 0 0;
     cursor:default;
+    user-select: none;
+    animation: info1 1s ease-out 1;
+
+
 }
 
 .apples{
@@ -148,6 +166,8 @@ p{
     font-size:25px;
     margin:0 0 0 0;
     cursor:default;
+    user-select: none;
+    animation: info1 1s ease-out 1;
 }
 
 .enemies{
@@ -155,7 +175,9 @@ p{
     color:whitesmoke;
     font-size:25px;
     margin:0 0 0 0;
+    user-select: none;
     cursor:default;
+    animation: info1 1s ease-out 1;
 }
 
 .infoerror{
@@ -169,6 +191,11 @@ h1{
 }
 h2{font-family: Krona One;
 color: whitesmoke;}
+
+img{
+    width: 100px;
+    height: 70px;
+}
 
 /*media q*/
 
@@ -191,3 +218,55 @@ color: whitesmoke;}
      
 }
 
+
+
+/* animation */
+
+@keyframes barea1{
+    0%{
+        transform: scale(0.7);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+@keyframes name1{
+    0%{
+        transform: translateY(-300px);
+    }
+    100%{
+        transform: none;
+    }
+}
+
+@keyframes psp1 {
+    0%{
+        transform: translateX(-300px);
+    }
+    100%{
+        transform: none;
+    }
+}
+
+@keyframes info1{
+    0%{
+        transform: translateX(300px);
+    }
+    100%{
+        transform: none;
+    }
+}
+
+@keyframes start1{
+    0%{
+        transform: translateY(300px)  scale(0.8);
+
+    }
+    75%{
+        transform: translateY(0) scale(0.8);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
