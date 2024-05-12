@@ -40,7 +40,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .name{
@@ -123,8 +123,8 @@ p{
 }
 
 .barea{
-    width:48vw;
-    height:94vh;
+    width: 1000px;
+    height:1000px;
     background-color: rgba(245, 245, 245, 0.25);
     border:4px solid whitesmoke;
     backdrop-filter: blur(10px);
@@ -139,46 +139,42 @@ p{
 .barea:hover{
     transform: scale(1.01);
 }
-.time{
-    font-family: Krona One;
-    color:whitesmoke;
-    font-size:25px;
-    margin:0 0 0 0;
-    cursor:default;
-    user-select: none;
-    animation: info1 1s ease-out 1;
-}
-.score{
-    font-family: Krona One;
-    color:whitesmoke;
-    font-size:25px;
-    margin:0 0 0 0;
-    cursor:default;
-    user-select: none;
-    animation: info1 1s ease-out 1;
 
+.speed{
+    font-family: Krona One;
+    font-size: xx-large;
+    color: whitesmoke;
 
 }
+.buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    }
 
-.apples{
-    font-family: Krona One;
-    color:whitesmoke;
-    font-size:25px;
-    margin:0 0 0 0;
-    cursor:default;
-    user-select: none;
-    animation: info1 1s ease-out 1;
+.btn_spp{
+    width:60px;
+    height:60px;
+    border:3px solid whitesmoke;
+    border-radius: 15px;
+    background-color: rgba(245, 245, 245, 0.25);
+    backdrop-filter: blur(10px);
+    margin:0 ;
+
+}
+.btn_spm{
+    width:60px;
+    height:60px;
+    border:3px solid whitesmoke;
+    border-radius: 15px;
+    background-color: rgba(245, 245, 245, 0.25);
+    backdrop-filter: blur(10px);
+
 }
 
-.enemies{
-    font-family: Krona One;
-    color:whitesmoke;
-    font-size:25px;
-    margin:0 0 0 0;
-    user-select: none;
-    cursor:default;
-    animation: info1 1s ease-out 1;
-}
+
+
 
 .infoerror{
     display: none;
