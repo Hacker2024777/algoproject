@@ -98,7 +98,7 @@ p{
     backdrop-filter: blur(10px);
     border-radius: 25px;
     font-size:25px;
-    transition: 0.3s;
+    transition: 0.2s;
     cursor:pointer;
     user-select: none;
     animation: start1 1.5s ease-in-out 1;
@@ -151,6 +151,7 @@ p{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin-top: 3vh ;
     }
 
 .btn_spp{
@@ -160,7 +161,11 @@ p{
     border-radius: 15px;
     background-color: rgba(245, 245, 245, 0.25);
     backdrop-filter: blur(10px);
-    margin:0 ;
+    margin-right:2vh ;
+    font-family: Krona One;
+    font-size: x-large;
+    color:whitesmoke;
+    transition: 0.2s;
 
 }
 .btn_spm{
@@ -170,10 +175,28 @@ p{
     border-radius: 15px;
     background-color: rgba(245, 245, 245, 0.25);
     backdrop-filter: blur(10px);
-
+    font-family: Krona One;
+    font-size: x-large;
+    color:whitesmoke;
+    transition: 0.2s;
 }
 
 
+.btn_spp:hover{
+    transform: scale(1.05);
+}
+
+.btn_spm:hover{
+    transform: scale(1.05);
+}
+
+.btn_spp:active{
+    transform: scale(0.9);
+}
+
+.btn_spm:active{
+    transform: scale(0.9);
+}
 
 
 .infoerror{
