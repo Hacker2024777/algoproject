@@ -4,6 +4,7 @@ let spp = document.querySelector('.btn_spp')
 let spm = document.querySelector('.btn_spm')
 let counterapple  = document.querySelector('.buttons')
 // Классическая змейка — двухмерная, сделаем такую же
+counterapple.innerHTML = 0;
 
 //переменная  - колво собранных яблок
 let ca = 0
@@ -93,6 +94,8 @@ let ca = 0
         if (cell.x === apple.x && cell.y === apple.y) {
           // увеличиваем длину змейки
           snake.maxCells++;
+          counterapple.innerHTML ++
+
             
           // Рисуем новое яблочко
           // Помним, что размер холста у нас 400x400, при этом он разбит на ячейки — 25 в каждую сторону
@@ -170,4 +173,4 @@ spm.addEventListener('click',function(){
 })
 
 
-counterapple.innerHTML = ca;
+
