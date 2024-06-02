@@ -1,8 +1,13 @@
 let field = document.querySelector('canvas')
 var canvas = document.getElementById('game');
 let spp = document.querySelector('.btn_spp')
-let spm = document.querySelector('.btn_spm')    
+let spm = document.querySelector('.btn_spm')
+let counterapple  = document.querySelector('.buttons')
 // Классическая змейка — двухмерная, сделаем такую же
+
+//переменная  - колво собранных яблок
+let ca = 0
+
 
     field.style.display = 'none'
 
@@ -88,6 +93,7 @@ let spm = document.querySelector('.btn_spm')
         if (cell.x === apple.x && cell.y === apple.y) {
           // увеличиваем длину змейки
           snake.maxCells++;
+            ca++;
           // Рисуем новое яблочко
           // Помним, что размер холста у нас 400x400, при этом он разбит на ячейки — 25 в каждую сторону
           apple.x = getRandomInt(0, 25) * grid;
@@ -162,3 +168,6 @@ spp.addEventListener('click',function(){
 spm.addEventListener('click',function(){
     count -= 1
 })
+
+
+counterapple.innerHTML = ca;
