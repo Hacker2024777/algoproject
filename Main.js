@@ -93,8 +93,7 @@ let ca = 0
         if (cell.x === apple.x && cell.y === apple.y) {
           // увеличиваем длину змейки
           snake.maxCells++;
-            ca++;
-            console.log(ca)
+            
           // Рисуем новое яблочко
           // Помним, что размер холста у нас 400x400, при этом он разбит на ячейки — 25 в каждую сторону
           apple.x = getRandomInt(0, 25) * grid;
