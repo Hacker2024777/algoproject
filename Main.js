@@ -99,8 +99,8 @@ let ca = 0
             
           // Рисуем новое яблочко
           // Помним, что размер холста у нас 400x400, при этом он разбит на ячейки — 25 в каждую сторону
-          apple.x = getRandomInt(0, 25) * grid;
-          apple.y = getRandomInt(0, 25) * grid;
+          apple.x = getRandomInt(0, 13) * grid;
+          apple.y = getRandomInt(0, 13) * grid;
         }
         // Проверяем, не столкнулась ли змея сама с собой
         // Для этого перебираем весь массив и смотрим, есть ли у нас в массиве змейки две клетки с одинаковыми координатами 
@@ -115,8 +115,8 @@ let ca = 0
             snake.dx = grid;
             snake.dy = 0;
             // Ставим яблочко в случайное место
-            apple.x = getRandomInt(0, 25) * grid;
-            apple.y = getRandomInt(0, 25) * grid;
+            apple.x = getRandomInt(0, 13) * grid;
+            apple.y = getRandomInt(0, 13) * grid;
           }
         }
       });
